@@ -3,7 +3,8 @@ const width = 1000;
 const height = 1000;
 const dir = __dirname;
 const description = "This is an NFT made by the coolest generative code.";
-const baseImageUri = "https://hashlips/nft";
+const baseImageUri =
+  "https://storage.cloud.google.com/staging.test-b48f4.appspot.com/output";
 const startEditionFrom = 1;
 const endEditionAt = 10;
 const editionSize = 10;
