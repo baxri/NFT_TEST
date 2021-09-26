@@ -4,7 +4,7 @@ pragma solidity ^0.8.7;
 import "@openzeppelin/contracts/token/ERC721/extensions/ERC721Enumerable.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
 
-contract NFT_TOKEN is ERC721Enumerable, Ownable {
+contract NftTest is ERC721Enumerable, Ownable {
     using Strings for uint256;
 
     string public baseURI;
@@ -20,7 +20,7 @@ contract NFT_TOKEN is ERC721Enumerable, Ownable {
         string memory _initBaseURI
     ) ERC721(_name, _symbol) {
         setBaseURI(_initBaseURI);
-        mint(msg.sender, 20);
+        mint(msg.sender, 10);
     }
 
     // internal
