@@ -7,6 +7,8 @@ import "@openzeppelin/contracts/access/Ownable.sol";
 contract NftTest is ERC721Enumerable, Ownable {
     using Strings for uint256;
 
+    string public ipsfhash;
+
     string public baseURI;
     string public baseExtension = ".json";
     uint256 public cost = 0.02 ether;
@@ -26,6 +28,11 @@ contract NftTest is ERC721Enumerable, Ownable {
     // internal
     function _baseURI() internal view virtual override returns (string memory) {
         return baseURI;
+    }
+
+    // public
+    function setIpfsHash(string memory _hash) public {
+        ipsfhash = _hash;
     }
 
     // public
